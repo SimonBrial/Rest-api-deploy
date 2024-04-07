@@ -1,0 +1,42 @@
+### Get all movies
+GET http://localhost:1234/movies
+
+### Get a movie by ID
+GET http://localhost:1234/movies/c8a7d63f-3b04-44d3-9d95-8782fd7dcfaf
+
+### Get all movies by gender
+GET http://localhost:1234/movies?genre=Action
+
+### Create a movie
+POST http://localhost:1234/movies
+Content-Type: application/json
+
+{
+  "title": "The Dark Knight 2.5",
+  "year": 2009,
+  "director": "Christopher Simon",
+  "duration": 162,
+  "poster": "https://i.ebayimg.com/images/g/yokAAOSw8w1YARbm/s-l1200.jpg",
+  "genre": [
+    "Action",
+    "Crime",
+    "Drama",
+    "Terror"
+  ],
+  "rate": 10
+}
+
+### Update a field of the movie's data
+PATCH  http://localhost:1234/movies/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
+Content-Type: application/json
+
+{
+  "title": "The Shawshank Redemption",
+  "year": 1996,
+  "director": "Frank Darabont",
+  "duration": 142,
+  "poster": "https://i.ebayimg.com/images/g/4goAAOSwMyBe7hnQ/s-l1200.webp",
+  "genre": [
+    "Drama"
+  ]
+}

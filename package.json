@@ -1,0 +1,22 @@
+{
+  "name": "node_api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node --watch ./app.js",
+    "dev1": "node --watch ./misc/index.js",
+    "dev2": "node --watch ./misc/routes.js",
+    "dev3": "node --watch ./misc/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "4.19.2",
+    "zod": "3.22.4"
+  }
+}
