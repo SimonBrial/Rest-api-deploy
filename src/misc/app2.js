@@ -10,7 +10,7 @@ const processRequest = (req, res) => {
     res.end("Welcome to my home page!")
   } else if (req.url === "/img-gallery.jpg") {
     res.setHeader("Content-Type", "image/jpg")
-    fs.readFile("./img/img-test.jpg", (err, data) => {
+    /* fs.readFile("./img/img-test.jpg", (err, data) => {
       if (err) {
         res.statusCode = 500
         res.end("<h1>500 Internal Server Error</h1>")
@@ -18,7 +18,7 @@ const processRequest = (req, res) => {
         res.setHeader("Content-Type", "image/jpg")
         res.end(data)
       }
-    })
+    }) */
   } else if (req.url === "/contacto") {
   }
 }
