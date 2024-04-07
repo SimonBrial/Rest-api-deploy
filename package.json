@@ -6,10 +6,7 @@
   "type": "module",
   "scripts": {
     "start": "node app.js",
-    "dev": "node --watch ./app.js",
-    "dev1": "node --watch ./misc/index.js",
-    "dev2": "node --watch ./misc/routes.js",
-    "dev3": "node --watch ./misc/app.js"
+    "dev": "node --watch ./app.js"
   },
   "keywords": [],
   "author": "",
